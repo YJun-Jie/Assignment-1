@@ -1,0 +1,424 @@
+/* General Styling */
+body {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #000000;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav input[type="search"] {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 20px ;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Container for alignment */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Games Section */
+.games-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.game-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 15px;
+  color: #000000;
+  height: 250px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
+}
+
+.game-card:hover {
+  transform: scale(1.02); /* Slightly enlarge the card */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Glowing effect */
+}
+
+/* Adding glow colors for each card type */
+.game-card.blue:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Blue glow */
+}
+
+.game-card.red:hover {
+  box-shadow: 0 0 15px rgba(255, 65, 54, 0.7); /* Red glow */
+}
+
+.game-card.green:hover {
+  box-shadow: 0 0 15px rgba(46, 204, 64, 0.7); /* Green glow */
+}
+
+.game-card.yellow:hover {
+  box-shadow: 0 0 15px rgba(255, 220, 0, 0.7); /* Yellow glow */
+}
+
+.game-card .text {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.game-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.game-card .image {
+  width: 40%;
+  height: 100%; /* Make the image container take the full height of the card */
+  overflow: hidden; /* Hide any part of the image that goes out of the container */
+  position: relative; /* Position relative to control the image inside it */
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image will cover the entire container without distortion */
+  object-position: center; /* Center the image */
+  border-radius: 8px;
+}
+
+/* Section Colors */
+.blue {
+  background-color: #007BFF;
+}
+
+.red {
+  background-color: #FF4136;
+}
+
+.green {
+  background-color: #2ECC40;
+}
+
+.yellow {
+  background-color: #FFDC00;
+  color: #000;
+}
+
+/* About Us Section */
+.about-us {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  width: 90%;
+  text-align: left;
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15pxr;
+}
+
+.about-us h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.about-us p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.about-us .our-values {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Others Section */
+.others {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  width: 90%;
+  text-align: left;
+}
+
+.others h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15pxr;
+}
+
+
+
+
+/* Footer */
+/* Footer Styling */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f00; /* Riot red hover color */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this to your CSS */
+#about-us {
+  scroll-margin-top: 100px; /* Adjust this value based on the height of your header */
+}
+
+/* About the Game */
+#game-details, #game-features {
+  padding: 40px 20px;
+  background-color: #000;
+  margin: 20px auto;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#game-details h2, #game-features h2 {
+  font-size: 2rem;
+}
+
+#game-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#game-features li {
+  padding: 10px 0;
+}
+
+/* Container */
+.game-page-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #171a21;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.game-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Media Carousel */
+/* Media Carousel */
+.media-carousel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 400px; /* Set a fixed height for the carousel */
+  width: 100%; /* Ensure it scales to fit the container */
+}
+
+.media-carousel img {
+  width: 100%;
+  height: 100%; /* Force the image to fill the container */
+  object-fit: cover; /* Maintain the aspect ratio and crop excess */
+  border-radius: 8px;
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Match the height of the carousel container */
+}
+
+.carousel-item.active {
+  display: block;
+  position: relative;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Game Details */
+.game-details {
+  flex: 1;
+  padding: 20px;
+  background-color: #10151b;
+  border-radius: 8px;
+  font-family: Arial, sans-serif
+}
+
+.game-details h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #66c0f4;
+}
+
+.reviews,
+.release-info,
+.tags {
+  margin: 10px 0;
+}
+
+.tags strong {
+  color: #66c0f4;
+}
+
+/* Action Button */
+.actions {
+  margin-top: 20px;
+}
+
+.actions .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #5cdb95;
+  color: #1b2838;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.actions .btn:hover {
+  background-color: #45a77a;
+}
